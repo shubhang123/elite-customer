@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'services/auth_service.dart';
 import 'state/app_state.dart';
 import 'state/auth_provider.dart';
 import 'theme/app_theme.dart';
 import 'views/welcome/welcome_screen.dart';
+import 'widgets/auth_wrapper.dart'; 
 import 'views/welcome/login_screen.dart';
 import 'views/welcome/otp_screen.dart';
 import 'layouts/main_layout.dart';
@@ -18,6 +20,7 @@ void main() async {
   // Configure default animation duration
   Animate.defaultDuration = const Duration(milliseconds: 300);
 
+  await Firebase.initializeApp();
   final authService = await AuthService.create();
 
   runApp(
@@ -47,7 +50,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Elite Customer',
       theme: AppTheme.lightTheme(),
-      initialRoute: '/',
+      home: const AuthWrapper(), 
       routes: {
         '/': (context) => const WelcomeScreen(),
         '/login': (context) => const LoginScreen(),

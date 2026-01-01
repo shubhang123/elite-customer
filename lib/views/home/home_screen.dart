@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../models/feature_card.dart';
-import '../../models/user_profile.dart';
-import '../../models/job_summary.dart';
 import '../../state/app_state.dart';
 import '../../layouts/main_layout.dart';
 import '../../widgets/app_bar_with_notifications.dart';

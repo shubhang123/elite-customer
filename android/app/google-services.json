@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "644499023081",
+    "project_id": "elite-customer-8b70c",
+    "storage_bucket": "elite-customer-8b70c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644499023081:android:0f7a05083f0513959abc78",
+        "android_client_info": {
+          "package_name": "com.example.elite_customer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEjaS9eTkxOipZDuUupShSKwghKp8eD9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
